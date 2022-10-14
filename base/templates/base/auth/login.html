@@ -1,22 +1,23 @@
+{% load i18n %}
 <div class="container"> 
     <div class="layout__box">
       <div class="layout__boxHeader">
         <div class="layout__boxTitle">
-          <h3>Login</h3>
+          <h3>  {% trans "Entrar" %}</h3>
         </div>
       </div>
       <div class="layout__body">
-        <h2 class="auth__tagline">Find your study partner</h2>
+        <h2 class="auth__tagline">  {% trans "Encontre seu parceiro de estudo de linguas nacionais" %}</h2>
 
         <form class="form" action="" method="POST">
           {% csrf_token %}
 
           <div class="form__group form__group">
-            <label for="room_name">Email</label>
+            <label for="room_name"> {% trans "Email" %}</label>
             <input id="username" name="email" type="text" placeholder="e.g. email@gmail.com" />
           </div>
           <div class="form__group">
-            <label for="password">Password</label>
+            <label for="password"> {% trans "Senha" %}</label>
             <input
               id="password"
               name="password"
@@ -42,13 +43,15 @@
               ></path>
             </svg>
 
-            Login
+            
+            {% trans "Login" %}
           </button>
         </form>
 
         <div class="auth__action">
-          <p>Haven't signed up yet?</p>
-          <a href="{% url 'register' %}" class="btn btn--link">Sign Up</a>
+          <p>            {% trans "Ainda não se inscreveu? " %}
+          </p>
+          <a href="{% url 'register' %}" class="btn btn--link">  {% trans "Criar conta" %}</a>
         </div>
       </div>
     </div>

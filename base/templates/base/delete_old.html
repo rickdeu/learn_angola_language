@@ -6,9 +6,9 @@
     {% csrf_token %}
 
     <p>
-        Are you sure you want to delete <b>{{obj}}</b> ?
+       Tem certeza que pretende eliminar esse registo <b>{{obj}}</b> ?
     </p>
-    <a href="{{request.META.HTTP_REFERER}}">Go Back</a>
+    <a href="{{request.META.HTTP_REFERER}}">Voltar</a>
     <input type="submit" value="Confirm"/>
 
 

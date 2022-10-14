@@ -1,10 +1,12 @@
+{% load i18n %}
+
 <div class="topics">
     <div class="topics__header">
-      <h2>Browse Topics</h2>
+      <h2> {% trans "Procurar tópicos " %}</h2>
     </div>
     <ul class="topics__list">
         <li>
-            <a href="{% url 'home' %}" class="active">All <span>{{topics.count}}</span></a>
+            <a href="{% url 'home' %}" class="active"> {% trans "Todos" %}<span>{{topics.count}}</span></a>
           </li>
         {% for topic in topics %}
 

@@ -1,4 +1,6 @@
 {% extends 'main.html' %}
+{% load i18n %}
+
    {% block content %}
     <main class="update-account layout">
         <div class="container">
@@ -14,7 +16,7 @@
                                 </path>
                             </svg>
                         </a>
-                        <h3>Edit your profile</h3>
+                        <h3>  {% trans "Editar perfil" %}</h3>
                     </div>
                 </div>
                 <div class="layout__body">
@@ -32,8 +34,8 @@
 
     
                         <div class="form__action">
-                            <a class="btn btn--dark" href="{{request.META.HTTP_REFERER}}">Cancel</a>
-                            <button class="btn btn--main" type="submit">Update</button>
+                            <a class="btn btn--dark" href="{{request.META.HTTP_REFERER}}"> {% trans "Cancelar" %}</a>
+                            <button class="btn btn--main" type="submit">{% trans "Actualizar" %}</button>
                         </div>
                     </form>
                 </div>

@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-14 23:31+0100\n"
+"PO-Revision-Date: 2022-10-14 23:25+0000\n"
+"Last-Translator:   <hangaloandre@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: base/forms.py:8 base/models.py:6
+msgid "name"
+msgstr "Nduko"
+
+#: base/forms.py:9
+#, fuzzy
+#| msgid "name"
+msgid "username"
+msgstr "Nduko"
+
+#: base/forms.py:10 base/models.py:7
+msgid "email"
+msgstr "caemail"
+
+#: base/forms.py:11
+msgid "password1"
+msgstr ""
+
+#: base/forms.py:12
+msgid "password2"
+msgstr ""
+
+#: base/models.py:8
+msgid "bio"
+msgstr "bio"
+
+#: base/models.py:9
+msgid "avatar"
+msgstr "foto"
+
+#: base/templates/base/activity.html:18 base/templates/base/home.html:29
+msgid "Actividades recentes"
+msgstr "Tchapita etali"
+
+#: base/templates/base/activity.html:32
+#: base/templates/base/feed_component.html:14 base/templates/base/room.html:67
+#: base/templates/base/room.html:97
+msgid "atrás"
+msgstr "henla"
+
+#: base/templates/base/activity.html:40
+#: base/templates/base/activity_component.html:26
+msgid "Apagar"
+msgstr "Yupamo"
+
+#: base/templates/base/activity.html:52
+#: base/templates/base/activity_component.html:38
+msgid "respondeu a publicação"
+msgstr "watava cuti"
+
+#: base/templates/base/activity_component.html:5
+msgid "Atividades recentes"
+msgstr "Walinga etali"
+
+#: base/templates/base/auth/login.html:6
+#: base/templates/base/auth/register.html:46
+msgid "Entrar"
+msgstr "Ingila"
+
+#: base/templates/base/auth/login.html:10
+#: base/templates/base/auth/register.html:9
+msgid "Encontre seu parceiro de estudo de linguas nacionais"
+msgstr "Vandja o munu ove u yongola okutanga"
+
+#: base/templates/base/auth/login.html:16
+#, fuzzy
+#| msgid "email"
+msgid "Email"
+msgstr "caemail"
+
+#: base/templates/base/auth/login.html:20
+msgid "Senha"
+msgstr "Essapi"
+
+#: base/templates/base/auth/login.html:47
+msgid "Login"
+msgstr "Inhila"
+
+#: base/templates/base/auth/login.html:52
+msgid "Ainda não se inscreveu? "
+msgstr "Andi cucuete a conta"
+
+#: base/templates/base/auth/login.html:54
+#: base/templates/base/auth/register.html:5
+#: base/templates/base/auth/register.html:40
+msgid "Criar conta"
+msgstr "Linga ove"
+
+#: base/templates/base/auth/register.html:45
+msgid "Já tem uma conta?"
+msgstr "Andi cucuete a conta"
+
+#: base/templates/base/delete.html:19
+msgid "Voltar"
+msgstr "Tchuca"
+
+#: base/templates/base/delete.html:27
+msgid "Tem certeza que pretende eliminar esse registo"
+msgstr "Ove otchin mwele oyongola okulinga"
+
+#: base/templates/base/feed_component.html:38
+msgid "participantes"
+msgstr "o muno"
+
+#: base/templates/base/home.html:19
+msgid "procurar"
+msgstr "Vandjilia"
+
+#: base/templates/base/home.html:28
+msgid "Procurar Temas"
+msgstr "Vandjilia etchi u yongola"
+
+#: base/templates/base/home.html:35
+msgid "Otchotos disponíveis"
+msgstr "Evi tu kuete"
+
+#: base/templates/base/home.html:45
+msgid "Criar espaço"
+msgstr "Linga yove"
+
+#: base/templates/base/profile.html:25
+msgid "Editar Conta"
+msgstr ""
+
+#: base/templates/base/profile.html:29
+msgid "Sobre mim"
+msgstr "Ame culo"
+
+#: base/templates/base/profile.html:38
+msgid "Otchoto criado por"
+msgstr "Walinga la "
+
+#: base/templates/base/room.html:19
+msgid "Otchoto"
+msgstr ""
+
+#: base/templates/base/room.html:33
+msgid "edit"
+msgstr "Linga tchiwa"
+
+#: base/templates/base/room.html:70
+msgid "Criado por"
+msgstr "Walinga la "
+
+#: base/templates/base/room.html:104
+msgid "apagar"
+msgstr "Upamo"
+
+#: base/templates/base/room.html:138
+msgid "Participantes"
+msgstr "Omunu"
+
+#: base/templates/base/room_form.html:20
+msgid "Criar/Guardar Otchoto"
+msgstr "Soleca"
+
+#: base/templates/base/room_form.html:28
+msgid "Tema"
+msgstr "Tchipopia"
+
+#: base/templates/base/room_form.html:47
+msgid "Nome do otchoto"
+msgstr "Ondoco"
+
+#: base/templates/base/room_form.html:54
+msgid "Descrição do Otchoto"
+msgstr ""
+
+#: base/templates/base/room_form.html:76
+#: base/templates/base/update-user.html:37
+msgid "Cancelar"
+msgstr "Ucalingue"
+
+#: base/templates/base/room_form.html:78
+msgid "Submemter"
+msgstr "Linga"
+
+#: base/templates/base/topics.html:18
+msgid "Procurar tópicos"
+msgstr "Vandjilia etchi u yongola"
+
+#: base/templates/base/topics.html:38
+msgid "All"
+msgstr "Vossi"
+
+#: base/templates/base/topics_component.html:5
+msgid "Procurar tópicos "
+msgstr "Vandjilia etchi u yongola"
+
+#: base/templates/base/topics_component.html:9
+msgid "Todos"
+msgstr "Vossi"
+
+#: base/templates/base/update-user.html:19
+msgid "Editar perfil"
+msgstr ""
+
+#: base/templates/base/update-user.html:38
+msgid "Actualizar"
+msgstr ""
+
+#: base/urls.py:6
+msgid "login/"
+msgstr ""
+
+#: base/urls.py:7
+msgid "logout/"
+msgstr ""
+
+#: base/urls.py:8
+msgid "register/"
+msgstr ""
+
+#: base/urls.py:9
+msgid "profile/<str:pk>/"
+msgstr ""
+
+#: base/urls.py:10
+msgid "room/<str:pk>/"
+msgstr ""
+
+#: base/urls.py:11
+msgid "create-room/"
+msgstr ""
+
+#: base/urls.py:12
+msgid "update-room/<str:pk>/"
+msgstr ""
+
+#: base/urls.py:13
+msgid "delete-room/<str:pk>/"
+msgstr ""
+
+#: base/urls.py:14
+msgid "delete-message/<str:pk>/"
+msgstr ""
+
+#: base/urls.py:15
+msgid "update-user/"
+msgstr ""
+
+#: base/urls.py:16
+msgid "topics/"
+msgstr ""
+
+#: base/urls.py:17
+msgid "activity/"
+msgstr ""

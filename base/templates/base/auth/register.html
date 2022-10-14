@@ -2,11 +2,11 @@
     <div class="layout__box">
       <div class="layout__boxHeader">
         <div class="layout__boxTitle">
-          <h3>Register</h3>
+          <h3> {% trans "Criar conta" %}</h3>
         </div>
       </div>
       <div class="layout__body">
-        <h2 class="auth__tagline">Find your study partner</h2>
+        <h2 class="auth__tagline"> {% trans "Encontre seu parceiro de estudo de linguas nacionais" %}</h2>
 
         <form class="form" action="" method="POST">
           {% csrf_token %}
@@ -37,13 +37,13 @@
               ></path>
             </svg>
 
-            Register
+            {% trans "Criar conta" %}
           </button>
         </form>
 
         <div class="auth__action">
-          <p>Already have account?</p>
-          <a href="{% url 'login' %}" class="btn btn--link">Sign In</a>
+          <p> {% trans "Já tem uma conta?" %}</p>
+          <a href="{% url 'login' %}" class="btn btn--link"> {% trans "Entrar" %}</a>
         </div>
       </div>
     </div>

@@ -1,4 +1,6 @@
 {% extends 'main.html' %}
+{% load i18n %}
+
    {% block content %}
     <main class="delete-item layout">
         <div class="container">
@@ -14,7 +16,7 @@
                                 </path>
                             </svg>
                         </a>
-                        <h3>Back</h3>
+                        <h3>  {% trans "Voltar" %}</h3>
                     </div>
                 </div>
                 <div class="layout__body">
@@ -22,11 +24,11 @@
                         {% csrf_token %}
 
                         <div class="form__group">
-                            <p>Are you sure you want to delete "{{obj}}"?</p>
+                            <p> {% trans "Tem certeza que pretende eliminar esse registo" %}  "{{obj}}"?</p>
                         </div>
 
                         <div class="for__group">
-                            <input class="btn btn--main" type="submit" value="Confirm" />
+                            <input class="btn btn--main" type="submit" value="Confirmar" />
                         </div>
 
                     </form>

@@ -1,4 +1,6 @@
 {% extends 'main.html' %}
+{% load i18n %}
+
    {% block content %}
   <main class="create-room layout">
     
@@ -15,7 +17,7 @@
                 </path>
               </svg>
             </a>
-            <h3>Create/Update Chat Room</h3>
+            <h3>  {% trans "Criar/Guardar Otchoto" %}</h3>
           </div>
         </div>
         <div class="layout__body">
@@ -23,7 +25,7 @@
             {% csrf_token %}
 
             <div class="form__group">
-              <label for="room_topic">Enter a topic</label>
+              <label for="room_topic">  {% trans "Tema" %}</label>
               <input required type="text" value="{{room.topic.name}}" name="topic" list="topic-list"/>
               <datalist id="topic-list">
                 <select id="room_topic">
@@ -42,14 +44,14 @@
             </div>
 
             <div class="form__group">
-              <label for="room_name">Room Name</label>
+              <label for="room_name">  {% trans "Nome do otchoto" %}</label>
 
               {{form.name}}
      
             </div>
 
             <div class="form__group">
-              <label for="room_description">Room Description</label>
+              <label for="room_description"> {% trans "Descrição do Otchoto" %}</label>
 
               {{form.description}}
              <!-- <input id="room_name" name="room_name" type="text" placeholder="E.g. Mastering Python + Django" />
@@ -71,8 +73,9 @@
 
 
             <div class="form__action">
-              <a class="btn btn--dark" href="{{request.META.HTTP_REFERER}}">Cancel</a>
-              <button class="btn btn--main" type="submit">Submit</button>
+              <a class="btn btn--dark" href="{{request.META.HTTP_REFERER}}"> {% trans "Cancelar" %}</label>
+              </a>
+              <button class="btn btn--main" type="submit">  {% trans "Submemter" %}</button>
             </div>
           </form>
         </div>

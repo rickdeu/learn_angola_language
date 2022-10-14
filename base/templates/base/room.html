@@ -1,4 +1,6 @@
 {% extends 'main.html' %}
+{% load i18n %}
+
    {% block content %}
     <main class="profile-page layout layout--2">
       <div class="container">
@@ -14,7 +16,7 @@
                   ></path>
                 </svg>
               </a>
-              <h3>Study Room</h3>
+              <h3>   {% trans "Otchoto" %}</h3>
             </div>
 
             {% if room.host == request.user %}
@@ -28,7 +30,7 @@
                   width="32"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <title>edit</title>
+                  <title>  {% trans "edit" %}</title>
                   <g>
                     <path d="m23.5 22h-15c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h15c.276 0 .5.224.5.5s-.224.5-.5.5z" />
                   </g>
@@ -62,10 +64,10 @@
             <div class="room__header scroll">
               <div class="room__info">
                 <h3> {{room.name}}</h3>
-                <span> {{room.created|timesince}} ago</span>
+                <span> {{room.created|timesince}} {% trans "atrás" %} </span>
               </div>
               <div class="room__hosted">
-                <p>Hosted By</p>
+                <p> {% trans "Criado por" %}</p>
                 <a href="{% url 'user-profile' room.host.id %}" class="room__author">
                   <div class="avatar avatar--small">
                     <img src="{{room.host.avatar.url}}" />
@@ -92,14 +94,14 @@
                         </div>
                         <span>@{{message.user.username}} </span>
                       </a>
-                      <span class="thread__date">{{message.created|timesince}} ago</span>
+                      <span class="thread__date">{{message.created|timesince}} {% trans "atrás" %}</span>
                     </div>
 
                     {% if request.user == message.user %}
 <a href="{% url 'delete-message' message.id %}">
                     <div class="thread__delete">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                        <title>remove</title>
+                        <title>{% trans "apagar" %}</title>
                         <path
                           d="M27.314 6.019l-1.333-1.333-9.98 9.981-9.981-9.981-1.333 1.333 9.981 9.981-9.981 9.98 1.333 1.333 9.981-9.98 9.98 9.98 1.333-1.333-9.98-9.98 9.98-9.981z"
                         ></path>
@@ -133,7 +135,7 @@
 
         <!--   Start -->
         <div class="participants">
-          <h3 class="participants__top">Participants <span>({{participants.count}} Joined)</span></h3>
+          <h3 class="participants__top"> {% trans "Participantes" %} <span>({{participants.count}})</span></h3>
           <div class="participants__list scroll">
             {% for user in participants %}
 
