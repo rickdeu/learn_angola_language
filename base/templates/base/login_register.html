@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <main class="auth layout">
+      {% if page == 'login' %}
+
+      {% include 'base/auth/login.html' %}
+    
+   
+ 
+      {% else %}
+   
+      {% include 'base/auth/register.html' %}
+
+
+   {% endif %}
+    </main>
+    {% endblock content %}
