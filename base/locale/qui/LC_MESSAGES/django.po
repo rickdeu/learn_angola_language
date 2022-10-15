@@ -9,27 +9,25 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-15 13:23+0100\n"
-"PO-Revision-Date: 2022-10-15 12:23+0000\n"
-"Last-Translator:   <hangaloandre@gmail.com>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.9.8\n"
 
 #: base/forms.py:8 base/models.py:6
 msgid "name"
-msgstr "nome"
+msgstr ""
 
 #: base/forms.py:9
 msgid "username"
-msgstr "usuario"
+msgstr ""
 
 #: base/forms.py:10 base/models.py:7
 msgid "email"
-msgstr "email"
+msgstr ""
 
 #: base/forms.py:11
 msgid "password1"
@@ -41,11 +39,11 @@ msgstr ""
 
 #: base/models.py:8
 msgid "bio"
-msgstr "bio"
+msgstr ""
 
 #: base/models.py:9
 msgid "avatar"
-msgstr "foto"
+msgstr ""
 
 #: base/templates/base/activity.html:18 base/templates/base/home.html:29
 msgid "Actividades recentes"
@@ -83,7 +81,7 @@ msgstr ""
 
 #: base/templates/base/auth/login.html:16
 msgid "Email"
-msgstr "Correio electronico"
+msgstr ""
 
 #: base/templates/base/auth/login.html:20
 msgid "Senha"
@@ -135,25 +133,22 @@ msgstr ""
 msgid "Criar espaço"
 msgstr ""
 
-#: base/templates/base/pagination.html:5
-#: base/templates/base/pagination1.html:5
+#: base/templates/base/pagination.html:5 base/templates/base/pagination1.html:5
 msgid "Previous"
-msgstr "Anterior"
+msgstr ""
 
-#: base/templates/base/pagination.html:8
-#: base/templates/base/pagination1.html:8
+#: base/templates/base/pagination.html:8 base/templates/base/pagination1.html:8
 msgid "Page"
-msgstr "Pagina"
+msgstr ""
 
-#: base/templates/base/pagination.html:8
-#: base/templates/base/pagination1.html:8
+#: base/templates/base/pagination.html:8 base/templates/base/pagination1.html:8
 msgid "of"
-msgstr "de"
+msgstr ""
 
 #: base/templates/base/pagination.html:11
 #: base/templates/base/pagination1.html:11
 msgid "Next"
-msgstr "Proxima"
+msgstr ""
 
 #: base/templates/base/profile.html:25
 msgid "Editar Conta"
@@ -262,7 +257,7 @@ msgstr ""
 
 #: base/urls.py:11
 msgid "create-room/"
-msgstr "criar-sala/"
+msgstr ""
 
 #: base/urls.py:12
 msgid "update-room/<str:pk>/"
@@ -278,12 +273,12 @@ msgstr ""
 
 #: base/urls.py:15
 msgid "update-user/"
-msgstr "atualizar-user/"
+msgstr ""
 
 #: base/urls.py:16
 msgid "topics/"
-msgstr "topicos/"
+msgstr ""
 
 #: base/urls.py:17
 msgid "activity/"
-msgstr "actividades/"
+msgstr ""

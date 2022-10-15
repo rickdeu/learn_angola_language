@@ -117,10 +117,22 @@ gettext_noop = lambda s: s
 
 EXTRA_LANG_INFO = {
     'um': {
-        'bidi': True, # right-to-left
+        'bidi': True, 
         'code': 'um',
         'name': 'Umbundu',
         'name_local': 'Umbundu',
+    },
+        'na': {
+        'bidi': True, 
+        'code': 'na',
+        'name': 'Nhaneka',
+        'name_local': 'Nhaneka',
+    },
+            'qui': {
+        'bidi': True, 
+        'code': 'qui',
+        'name': 'Quimbundo',
+        'name_local': 'Quimbundo',
     },
     
 }
@@ -131,16 +143,16 @@ LANG_INFO = dict(django.conf.locale.LANG_INFO, **EXTRA_LANG_INFO)
 django.conf.locale.LANG_INFO = LANG_INFO
 
 global_settings.LANGUAGES = global_settings.LANGUAGES + [("um",'Umbundu')]
-#global_settings.LANGUAGES = global_settings.LANGUAGES + [("ky", 'Кыргызча')]
+global_settings.LANGUAGES = global_settings.LANGUAGES + [("na",'Nhaneka')]
+global_settings.LANGUAGES = global_settings.LANGUAGES + [("qui",'Quimbundo')]
 
-LANGUAGE_CODE = 'pt'
+LANGUAGE_CODE = 'pt-PT'
 LANGUAGES = [
     ('pt', _('Portuguese')),
-    ('en', _('English')), 
+    #('en', _('English')), 
     ('um', _('Umbundu')),  
-    #('na', _('Nhaneka')),    
-  
-   
+    ('na', _('Nhaneka')),    
+    ('qui', _('Quimbundo')),    
     ]
 
 LOCALE_PATHS = [

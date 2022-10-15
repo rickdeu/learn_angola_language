@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 00:21+0100\n"
+"POT-Creation-Date: 2022-10-15 12:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: chat_room/settings.py:138
+#: chat_room/settings.py:151
 msgid "Portuguese"
 msgstr "Português"
 
-#: chat_room/settings.py:139
+#: chat_room/settings.py:152
 msgid "English"
 msgstr "Inglês"
 
-#: chat_room/settings.py:140
+#: chat_room/settings.py:153
 msgid "Umbundu"
+msgstr "Umbundu"
+
+#: chat_room/settings.py:154
+msgid "Nhaneka"
+msgstr "Nhaneka"
+
+#: chat_room/settings.py:155
+#, fuzzy
+#| msgid "Umbundu"
+msgid "Quimbundo"
 msgstr "Umbundu"
 
 #: chat_room/urls.py:10
@@ -40,6 +50,10 @@ msgstr ""
 
 #: templates/navbar.html:7
 msgid "Otchoto"
+msgstr ""
+
+#: templates/navbar.html:17
+msgid "Procurar... "
 msgstr ""
 
 #: templates/navbar.html:25
@@ -1260,6 +1274,3 @@ msgstr ""
 #: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:249
 msgid "Connect, get help, or contribute"
 msgstr ""
-
-#~ msgid "Nhaneka"
-#~ msgstr "Nhaneka"

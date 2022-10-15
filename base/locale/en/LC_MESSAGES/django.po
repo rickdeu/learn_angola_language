@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 23:31+0100\n"
-"PO-Revision-Date: 2022-10-14 22:48+0000\n"
+"POT-Creation-Date: 2022-10-15 13:23+0100\n"
+"PO-Revision-Date: 2022-10-15 11:23+0000\n"
 "Last-Translator:   <hangaloandre@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -57,7 +57,7 @@ msgstr "Recents Activites"
 #: base/templates/base/feed_component.html:14 base/templates/base/room.html:67
 #: base/templates/base/room.html:97
 msgid "atrás"
-msgstr ""
+msgstr "ago"
 
 #: base/templates/base/activity.html:40
 #: base/templates/base/activity_component.html:26
@@ -113,7 +113,7 @@ msgstr ""
 
 #: base/templates/base/delete.html:19
 msgid "Voltar"
-msgstr ""
+msgstr "Go back"
 
 #: base/templates/base/delete.html:27
 msgid "Tem certeza que pretende eliminar esse registo"
@@ -137,6 +137,23 @@ msgstr "Otchotos availables"
 
 #: base/templates/base/home.html:45
 msgid "Criar espaço"
+msgstr ""
+
+#: base/templates/base/pagination.html:5 base/templates/base/pagination1.html:5
+msgid "Previous"
+msgstr ""
+
+#: base/templates/base/pagination.html:8 base/templates/base/pagination1.html:8
+msgid "Page"
+msgstr ""
+
+#: base/templates/base/pagination.html:8 base/templates/base/pagination1.html:8
+msgid "of"
+msgstr ""
+
+#: base/templates/base/pagination.html:11
+#: base/templates/base/pagination1.html:11
+msgid "Next"
 msgstr ""
 
 #: base/templates/base/profile.html:25
@@ -199,6 +216,12 @@ msgstr ""
 #: base/templates/base/topics.html:18
 msgid "Procurar tópicos"
 msgstr "Search topics"
+
+#: base/templates/base/topics.html:31
+#, fuzzy
+#| msgid "Procurar Temas"
+msgid "Procurar... "
+msgstr "Search Themes"
 
 #: base/templates/base/topics.html:38
 msgid "All"

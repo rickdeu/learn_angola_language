@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 23:31+0100\n"
+"POT-Creation-Date: 2022-10-15 13:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,6 +137,23 @@ msgstr ""
 msgid "Criar espaço"
 msgstr ""
 
+#: base/templates/base/pagination.html:5 base/templates/base/pagination1.html:5
+msgid "Previous"
+msgstr ""
+
+#: base/templates/base/pagination.html:8 base/templates/base/pagination1.html:8
+msgid "Page"
+msgstr ""
+
+#: base/templates/base/pagination.html:8 base/templates/base/pagination1.html:8
+msgid "of"
+msgstr ""
+
+#: base/templates/base/pagination.html:11
+#: base/templates/base/pagination1.html:11
+msgid "Next"
+msgstr ""
+
 #: base/templates/base/profile.html:25
 msgid "Editar Conta"
 msgstr ""
@@ -196,6 +213,10 @@ msgstr ""
 
 #: base/templates/base/topics.html:18
 msgid "Procurar tópicos"
+msgstr ""
+
+#: base/templates/base/topics.html:31
+msgid "Procurar... "
 msgstr ""
 
 #: base/templates/base/topics.html:38

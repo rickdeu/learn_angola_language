@@ -8,12 +8,8 @@ from django.db.models import Q
 from django.contrib.auth import authenticate, login, logout
 from .models import Message, Room, Topic, User
 from .forms import RoomForm, UserForm, MyUserCreationForm
-"""rooms = [
-    {'id':1, 'name':'Lets learn Python'},
-    {'id':2, 'name':'Design eith me'},
-    {'id':3, 'name':'Frontend dveleopers'},
+from django.core.paginator import Paginator, EmptyPage
 
-]"""
 
 def loginPage(request):
     page = 'login'
@@ -85,16 +81,31 @@ def registerPage(request):
 
 def home(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
-    rooms = Room.objects.filter(
+    topics = Topic.objects.all()[0:10]
+    room_message = Message.objects.filter(Q(room__topic__name__icontains=q))
+
+    room_list = Room.objects.filter(
         Q(topic__name__icontains=q) |
         Q(name__icontains=q) |
         Q(description__icontains=q)
         )
-    topics = Topic.objects.all()[0:5]
-    room_count = rooms.count()
-    room_messages = Message.objects.filter(
-        Q(room__topic__name__icontains=q)
-    )
+    room_count = room_list.count()
+
+    paginator = Paginator(room_list, 10)
+    paginator1 = Paginator(room_message, 10)
+
+    page_number = request.GET.get('page', 1)
+    page_number1 = request.GET.get('page1', 1)
+
+
+    try:
+        rooms = paginator.page(page_number)
+        room_messages = paginator1.page(page_number1)
+
+    except EmptyPage:
+        rooms = paginator.page(paginator.num_pages)
+        room_messages = paginator.page(paginator1.num_pages)
+
 
     context = {
         'rooms':rooms,
