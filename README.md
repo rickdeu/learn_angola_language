@@ -1,1 +1,5 @@
-# learn_angola_language
+# Learn Angola Language
+## Portugueses
+## Umbundu
+## Quimbundu
+## Nhaneka
