@@ -43,10 +43,33 @@
     </div>
 
     {% endfor %}
+
     <div style="text-align: center">
       {% include "base/pagination1.html" with page1=room_messages %}
 
     </div>
+<br>
+
+<div class="participants">
+  <h3 class="participants__top"> {% trans "Usuarios activos" %} <span>({{users.count}})</span></h3>
+  <div class="participants__list scroll">
+    {% for user in users %}
+
+    <a href="{% url 'user-profile' user.id %}" class="participant">
+      <div class="avatar avatar--medium">
+        <img src="{{user.avatar.url}}" />
+      </div>
+      <p>
+        {{user.username}}
+        <span>@{{user.username}}</span>
+      </p>
+    </a>
+    {% endfor %}
+
+  </div>
+</div>
+
+   
 
 </div>
  

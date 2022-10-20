@@ -81,8 +81,9 @@ def registerPage(request):
 
 def home(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
-    topics = Topic.objects.all()[0:10]
+    topics = Topic.objects.all()[0:20]
     room_message = Message.objects.filter(Q(room__topic__name__icontains=q))
+    users = User.objects.all()
 
     room_list = Room.objects.filter(
         Q(topic__name__icontains=q) |
@@ -91,8 +92,8 @@ def home(request):
         )
     room_count = room_list.count()
 
-    paginator = Paginator(room_list, 10)
-    paginator1 = Paginator(room_message, 10)
+    paginator = Paginator(room_list, 6)
+    paginator1 = Paginator(room_message, 4)
 
     page_number = request.GET.get('page', 1)
     page_number1 = request.GET.get('page1', 1)
@@ -112,6 +113,7 @@ def home(request):
         'topics':topics,
         'room_count':room_count,
         'room_messages':room_messages,
+        'users':users,
         }
     return render(
         request,
