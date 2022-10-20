@@ -15,7 +15,7 @@
           </div>
           <p>
             @{{message.user.username}}
-            <span>{{message.created|timesince}} atrás</span>
+            <span style="font-size: 8px">{{message.created|timesince}}</span>
           </p>
         </a>
         {% if request.user == message.user %}

@@ -29,11 +29,11 @@
                 </div>
                 <p>
                   @{{message.user.username}}
-                  <span>{{message.created|timesince}}  {% trans "atrás" %} </span>
+                  <span style="font-size: 8px">{{message.created|timesince}}</span>
                 </p>
               </a>
               {% if request.user == message.user %}
-      
+    
               <div class="roomListRoom__actions">
                 <a href="{% url 'delete-message' message.id %}">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">

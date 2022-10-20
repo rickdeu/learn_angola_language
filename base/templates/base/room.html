@@ -64,7 +64,7 @@
             <div class="room__header scroll">
               <div class="room__info">
                 <h3> {{room.name}}</h3>
-                <span> {{room.created|timesince}} {% trans "atrás" %} </span>
+                <span> {{room.created|timesince}} </span>
               </div>
               <div class="room__hosted">
                 <p> {% trans "Criado por" %}</p>
@@ -94,7 +94,7 @@
                         </div>
                         <span>@{{message.user.username}} </span>
                       </a>
-                      <span class="thread__date">{{message.created|timesince}} {% trans "atrás" %}</span>
+                      <span class="thread__date">{{message.created|timesince}}</span>
                     </div>
 
                     {% if request.user == message.user %}
@@ -124,12 +124,24 @@
               </div>
             </div>
           </div>
+          {% if request.user.is_authenticated %}
+
           <div class="room__message">
             <form action="" method="POST">
               {% csrf_token %}
-              <input name="body" placeholder="Write your message here..." />
+              <input name="body" placeholder="Escreva a sua mensagem aqui..." />
             </form>
           </div>
+
+          {% else %}
+          <div class="room__message">
+            <form action="" method="POST">
+              {% csrf_token %}
+              <input name="body" disabled placeholder="Inicia sessão primeiro..." />
+            </form>
+          </div>
+          {% endif %}
+
         </div>
         <!-- Room End -->
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 12:13+0100\n"
+"POT-Creation-Date: 2022-10-20 14:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,24 +18,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: chat_room/settings.py:151
+#: chat_room/settings.py:119
 msgid "Portuguese"
 msgstr ""
 
-#: chat_room/settings.py:152
-msgid "English"
-msgstr ""
-
-#: chat_room/settings.py:153
+#: chat_room/settings.py:121
 msgid "Umbundu"
 msgstr ""
 
-#: chat_room/settings.py:154
+#: chat_room/settings.py:122
 msgid "Nhaneka"
 msgstr ""
 
-#: chat_room/settings.py:155
-msgid "Quimbundo"
+#: chat_room/settings.py:123
+msgid "Kimbundo"
+msgstr ""
+
+#: chat_room/settings.py:124
+msgid "Kikongo"
+msgstr ""
+
+#: chat_room/settings.py:125
+msgid "Ngaguela"
 msgstr ""
 
 #: chat_room/urls.py:10

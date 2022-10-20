@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 13:23+0100\n"
+"POT-Creation-Date: 2022-10-20 14:27+0100\n"
 "PO-Revision-Date: 2022-10-15 11:23+0000\n"
 "Last-Translator:   <hangaloandre@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,45 +19,59 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: base/forms.py:8 base/models.py:6
+#: base/forms.py:8
+msgid "Primeiro nome"
+msgstr ""
+
+#: base/forms.py:9
+msgid "Ultimo nome"
+msgstr ""
+
+#: base/forms.py:11
+#, fuzzy
+#| msgid "name"
+msgid "Username"
+msgstr "name"
+
+#: base/forms.py:12 base/templates/base/auth/login.html:16
+#, fuzzy
+#| msgid "email"
+msgid "Email"
+msgstr "mail"
+
+#: base/forms.py:13 base/templates/base/auth/login.html:20
+msgid "Senha"
+msgstr "Pass"
+
+#: base/forms.py:14
+msgid "Confirmar senha"
+msgstr ""
+
+#: base/models.py:6
 msgid "name"
 msgstr "name"
 
-#: base/forms.py:9
+#: base/models.py:7
 #, fuzzy
 #| msgid "name"
-msgid "username"
+msgid "surname"
 msgstr "name"
 
-#: base/forms.py:10 base/models.py:7
+#: base/models.py:9
 msgid "email"
 msgstr "mail"
 
-#: base/forms.py:11
-msgid "password1"
-msgstr ""
-
-#: base/forms.py:12
-msgid "password2"
-msgstr ""
-
-#: base/models.py:8
+#: base/models.py:10
 msgid "bio"
 msgstr "bio"
 
-#: base/models.py:9
+#: base/models.py:11
 msgid "avatar"
 msgstr "avatar"
 
 #: base/templates/base/activity.html:18 base/templates/base/home.html:29
 msgid "Actividades recentes"
 msgstr "Recents Activites"
-
-#: base/templates/base/activity.html:32
-#: base/templates/base/feed_component.html:14 base/templates/base/room.html:67
-#: base/templates/base/room.html:97
-msgid "atrás"
-msgstr "ago"
 
 #: base/templates/base/activity.html:40
 #: base/templates/base/activity_component.html:26
@@ -74,24 +88,14 @@ msgid "Atividades recentes"
 msgstr "Recents Activity"
 
 #: base/templates/base/auth/login.html:6
-#: base/templates/base/auth/register.html:46
+#: base/templates/base/auth/register.html:47
 msgid "Entrar"
 msgstr "Login"
 
 #: base/templates/base/auth/login.html:10
-#: base/templates/base/auth/register.html:9
+#: base/templates/base/auth/register.html:10
 msgid "Encontre seu parceiro de estudo de linguas nacionais"
 msgstr "Find your national language study partner"
-
-#: base/templates/base/auth/login.html:16
-#, fuzzy
-#| msgid "email"
-msgid "Email"
-msgstr "mail"
-
-#: base/templates/base/auth/login.html:20
-msgid "Senha"
-msgstr "Pass"
 
 #: base/templates/base/auth/login.html:47
 msgid "Login"
@@ -102,12 +106,12 @@ msgid "Ainda não se inscreveu? "
 msgstr ""
 
 #: base/templates/base/auth/login.html:54
-#: base/templates/base/auth/register.html:5
-#: base/templates/base/auth/register.html:40
+#: base/templates/base/auth/register.html:6
+#: base/templates/base/auth/register.html:41
 msgid "Criar conta"
 msgstr "Create account"
 
-#: base/templates/base/auth/register.html:45
+#: base/templates/base/auth/register.html:46
 msgid "Já tem uma conta?"
 msgstr ""
 
@@ -139,19 +143,21 @@ msgstr "Otchotos availables"
 msgid "Criar espaço"
 msgstr ""
 
-#: base/templates/base/pagination.html:5 base/templates/base/pagination1.html:5
+#: base/templates/base/pagination.html:7 base/templates/base/pagination1.html:5
 msgid "Previous"
 msgstr ""
 
-#: base/templates/base/pagination.html:8 base/templates/base/pagination1.html:8
+#: base/templates/base/pagination.html:10
+#: base/templates/base/pagination1.html:8
 msgid "Page"
 msgstr ""
 
-#: base/templates/base/pagination.html:8 base/templates/base/pagination1.html:8
+#: base/templates/base/pagination.html:10
+#: base/templates/base/pagination1.html:8
 msgid "of"
 msgstr ""
 
-#: base/templates/base/pagination.html:11
+#: base/templates/base/pagination.html:13
 #: base/templates/base/pagination1.html:11
 msgid "Next"
 msgstr ""
@@ -184,7 +190,7 @@ msgstr ""
 msgid "apagar"
 msgstr ""
 
-#: base/templates/base/room.html:138
+#: base/templates/base/room.html:150
 msgid "Participantes"
 msgstr ""
 
@@ -290,3 +296,6 @@ msgstr ""
 #: base/urls.py:17
 msgid "activity/"
 msgstr ""
+
+#~ msgid "atrás"
+#~ msgstr "ago"

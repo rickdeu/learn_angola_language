@@ -15,6 +15,7 @@ from django.utils.translation import gettext_lazy as _
 from django.conf import global_settings
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+from chat_room import custom_language
 
 
 # Quick-start development settings - unsuitable for production
@@ -113,46 +114,15 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
-gettext_noop = lambda s: s
-
-EXTRA_LANG_INFO = {
-    'um': {
-        'bidi': True, 
-        'code': 'um',
-        'name': 'Umbundu',
-        'name_local': 'Umbundu',
-    },
-        'na': {
-        'bidi': True, 
-        'code': 'na',
-        'name': 'Nhaneka',
-        'name_local': 'Nhaneka',
-    },
-            'qui': {
-        'bidi': True, 
-        'code': 'qui',
-        'name': 'Quimbundo',
-        'name_local': 'Quimbundo',
-    },
-    
-}
-import django.conf.locale
-from django.conf import global_settings
-#LANG_INFO = dict(django.conf.locale.LANG_INFO.items() + EXTRA_LANG_INFO.items())
-LANG_INFO = dict(django.conf.locale.LANG_INFO, **EXTRA_LANG_INFO)
-django.conf.locale.LANG_INFO = LANG_INFO
-
-global_settings.LANGUAGES = global_settings.LANGUAGES + [("um",'Umbundu')]
-global_settings.LANGUAGES = global_settings.LANGUAGES + [("na",'Nhaneka')]
-global_settings.LANGUAGES = global_settings.LANGUAGES + [("qui",'Quimbundo')]
-
-LANGUAGE_CODE = 'pt-PT'
+LANGUAGE_CODE = 'um'
 LANGUAGES = [
-    ('pt', _('Portuguese')),
+    #('pt', _('Portuguese')),
     #('en', _('English')), 
     ('um', _('Umbundu')),  
     ('na', _('Nhaneka')),    
-    ('qui', _('Quimbundo')),    
+    ('kim', _('Kimbundo')),    
+    ('kik', _('Kikongo')),    
+    ('ngu', _('Ngaguela')),    
     ]
 
 LOCALE_PATHS = [
@@ -176,6 +146,7 @@ STATICFILES_DIRS=[
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static/images/profile'
+STATIC_ROOT = Path(BASE_DIR, 'staticfiles')
 
 # STATIC_ROOT =
 

@@ -25,7 +25,7 @@
             {% csrf_token %}
 
             <div class="form__group">
-              <label for="room_topic">  {% trans "Tema" %}</label>
+              <label for="room_topic">  {% trans "Lingua" %}</label>
               <input required type="text" value="{{room.topic.name}}" name="topic" list="topic-list"/>
               <datalist id="topic-list">
                 <select id="room_topic">
@@ -44,7 +44,7 @@
             </div>
 
             <div class="form__group">
-              <label for="room_name">  {% trans "Nome do otchoto" %}</label>
+              <label for="room_name">  {% trans "Assunto" %}</label>
 
               {{form.name}}
      

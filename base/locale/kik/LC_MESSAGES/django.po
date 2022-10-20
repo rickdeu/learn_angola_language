@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 14:27+0100\n"
+"POT-Creation-Date: 2022-10-20 14:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,16 +26,12 @@ msgid "Ultimo nome"
 msgstr ""
 
 #: base/forms.py:11
-#, fuzzy
-#| msgid "name"
 msgid "Username"
-msgstr "Enhina"
+msgstr ""
 
 #: base/forms.py:12 base/templates/base/auth/login.html:16
-#, fuzzy
-#| msgid "email"
 msgid "Email"
-msgstr "email"
+msgstr ""
 
 #: base/forms.py:13 base/templates/base/auth/login.html:20
 msgid "Senha"
@@ -47,25 +43,23 @@ msgstr ""
 
 #: base/models.py:6
 msgid "name"
-msgstr "Enhina"
+msgstr ""
 
 #: base/models.py:7
-#, fuzzy
-#| msgid "name"
 msgid "surname"
-msgstr "Enhina"
+msgstr ""
 
 #: base/models.py:9
 msgid "email"
-msgstr "email"
+msgstr ""
 
 #: base/models.py:10
 msgid "bio"
-msgstr "Ove"
+msgstr ""
 
 #: base/models.py:11
 msgid "avatar"
-msgstr "Cafoto"
+msgstr ""
 
 #: base/templates/base/activity.html:18 base/templates/base/home.html:29
 msgid "Actividades recentes"
