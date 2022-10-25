@@ -8,9 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2022-10-15 13:23+0100\n"
 "PO-Revision-Date: 2022-10-18 21:32+0000\n"
 "Last-Translator:   <joajoshang@gmail.com>\n"
+=======
+"POT-Creation-Date: 2022-10-25 14:44+0100\n"
+"PO-Revision-Date: 2022-10-15 12:21+0000\n"
+"Last-Translator:   <hangaloandre@gmail.com>\n"
+>>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,31 +25,43 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: chat_room/settings.py:151
-msgid "Portuguese"
-msgstr "Português"
-
-#: chat_room/settings.py:152
-msgid "English"
-msgstr "Inglês"
-
-#: chat_room/settings.py:153
+#: chat_room/settings.py:121
 msgid "Umbundu"
 msgstr "Umbundu"
 
-#: chat_room/settings.py:154
+#: chat_room/settings.py:122
 msgid "Nhaneka"
 msgstr "Nhaneka"
 
-#: chat_room/settings.py:155
+#: chat_room/settings.py:123
 #, fuzzy
 #| msgid "Umbundu"
-msgid "Quimbundo"
+msgid "Kimbundo"
 msgstr "Umbundu"
+
+#: chat_room/settings.py:124
+msgid "Kikongo"
+msgstr ""
+
+#: chat_room/settings.py:125
+msgid "Ngaguela"
+msgstr ""
+
+#: chat_room/settings.py:126
+msgid "Ibimbda"
+msgstr ""
 
 #: chat_room/urls.py:10
 msgid "api/"
 msgstr "api/"
+
+#: templates/footer.html:7
+msgid "Apoio"
+msgstr ""
+
+#: templates/footer.html:12 templates/navbar.html:25
+msgid "Idioma"
+msgstr "Idioma"
 
 #: templates/main.html:11
 msgid "Otchoto - Encontre seu parceiro de estudo de linguas nacionais! "
@@ -57,17 +75,13 @@ msgstr "Otchoto"
 msgid "Procurar... "
 msgstr "Procurar..."
 
-#: templates/navbar.html:25
-msgid "Idioma"
-msgstr "Idioma"
-
 #: templates/navbar.html:67
 msgid "Entrar"
 msgstr "Entrar"
 
 #: templates/navbar.html:81
-msgid "Perfil"
-msgstr "Perfil"
+msgid "Editar perfil"
+msgstr ""
 
 #: templates/navbar.html:94
 msgid "Sair"
@@ -1278,3 +1292,12 @@ msgstr ""
 #: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:249
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "Perfil"
+#~ msgstr "Perfil"
+
+#~ msgid "Portuguese"
+#~ msgstr "Português"
+
+#~ msgid "English"
+#~ msgstr "Inglês"

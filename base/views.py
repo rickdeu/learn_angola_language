@@ -6,7 +6,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.contrib.auth import authenticate, login, logout
-from .models import Message, Room, Topic, User
+from .models import Message, Room, Suport, Topic, User
 from .forms import RoomForm, UserForm, MyUserCreationForm
 from django.core.paginator import Paginator, EmptyPage
 
@@ -81,8 +81,10 @@ def registerPage(request):
 
 def home(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
-    topics = Topic.objects.all()[0:10]
+    topics = Topic.objects.all()[0:20]
     room_message = Message.objects.filter(Q(room__topic__name__icontains=q))
+    users = User.objects.all()
+    suports = Suport.objects.all()[0:4]
 
     room_list = Room.objects.filter(
         Q(topic__name__icontains=q) |
@@ -91,8 +93,8 @@ def home(request):
         )
     room_count = room_list.count()
 
-    paginator = Paginator(room_list, 10)
-    paginator1 = Paginator(room_message, 10)
+    paginator = Paginator(room_list, 6)
+    paginator1 = Paginator(room_message, 4)
 
     page_number = request.GET.get('page', 1)
     page_number1 = request.GET.get('page1', 1)
@@ -112,6 +114,8 @@ def home(request):
         'topics':topics,
         'room_count':room_count,
         'room_messages':room_messages,
+        'users':users,
+        'suports':suports
         }
     return render(
         request,
@@ -129,7 +133,8 @@ def room(request, pk):
         message = Message.objects.create(
             user = request.user,
             room = room,
-            body = request.POST.get('body')
+            body = request.POST.get('body'),
+            #img = request.FILES.get('file'),
         )
         room.participants.add(
             request.user

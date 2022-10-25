@@ -1,0 +1,42 @@
+{% load i18n %}
+{% load static %}
+<footer class="header header--loggedIn">
+    <div class="container">
+      <a href="{% url 'home' %}" class="header__logo">
+       <!-- <img src="{% static 'images/logo.svg'%}" />-->
+        <h1>  {% trans "Apoio" %} </h1>
+      </a>
+
+
+<div class="languages">
+<!--<p>{% trans "Idioma" %}:</p>-->
+<ul class="suport" style="font-size: 8px; list-style: none;  ">
+  {% for suport in suports %}
+  <li >  <a href="#">
+    <!--<img width="10px" height="10px" src="{% static 'images/logo.svg'%}" />-->
+  
+    <small>{{suport.name}}</small>
+  </a>   </li>
+
+{% endfor %}
+</ul>
+</div>
+
+      <nav class="header__menu">
+        <!-- Not Logged In -->
+        <a href="{% url 'home' %}">
+          <img src="{% static 'images/logo.svg'%}" />
+          <p>Otchoto</p>
+        </a> 
+
+        <!-- Logged In -->
+
+   
+   
+      </nav>
+  
+  
+    </div>
+
+
+</footer>

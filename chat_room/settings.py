@@ -15,6 +15,7 @@ from django.utils.translation import gettext_lazy as _
 from django.conf import global_settings
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+from chat_room import custom_language
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,7 +27,11 @@ SECRET_KEY = 'django-insecure-o3a!4h3!1&om4c(yb(hb1828b#g6#k9p^ofkkne6w#kyschm@%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['otchoto.pythonanywhere.com',]
+=======
+ALLOWED_HOSTS = ['*']
+>>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 
 
 # Application definition
@@ -113,6 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
+<<<<<<< HEAD
 gettext_noop = lambda s: s
 
 EXTRA_LANG_INFO = {
@@ -153,6 +159,18 @@ LANGUAGES = [
     ('um', _('Umbundu')),
     ('na', _('Nhaneka')),
     ('qui', _('Quimbundo')),
+=======
+LANGUAGE_CODE = 'um'
+LANGUAGES = [
+    #('pt', _('Portuguese')),
+    #('en', _('English')), 
+    ('um', _('Umbundu')),  
+    ('na', _('Nhaneka')),    
+    ('kim', _('Kimbundo')),    
+    ('kik', _('Kikongo')),    
+    ('ngu', _('Ngaguela')),   
+    ("ibm",_('Ibimbda'))
+>>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
     ]
 
 LOCALE_PATHS = [
@@ -177,6 +195,10 @@ STATICFILES_DIRS=[
 
 MEDIA_ROOT = BASE_DIR / 'static/images/profile'
 STATIC_ROOT = Path(BASE_DIR, 'staticfiles')
+<<<<<<< HEAD
+=======
+
+>>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 # STATIC_ROOT =
 
 # Default primary key field type

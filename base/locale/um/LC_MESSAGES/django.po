@@ -8,8 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2022-10-15 13:23+0100\n"
 "PO-Revision-Date: 2022-10-15 16:20+0000\n"
+=======
+"POT-Creation-Date: 2022-10-25 14:41+0100\n"
+"PO-Revision-Date: 2022-10-14 23:25+0000\n"
+>>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 "Last-Translator:   <hangaloandre@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,6 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
+<<<<<<< HEAD
 #: base/forms.py:8 base/models.py:6
 msgid "name"
 msgstr "Onduko"
@@ -38,25 +44,79 @@ msgstr "Elumbu"
 #: base/forms.py:12
 msgid "password2"
 msgstr "Elumbu"
+=======
+#: base/forms.py:8
+msgid "Primeiro nome"
+msgstr ""
 
-#: base/models.py:8
+#: base/forms.py:9
+msgid "Ultimo nome"
+msgstr ""
+
+#: base/forms.py:11
+#, fuzzy
+#| msgid "name"
+msgid "Username"
+msgstr "Nduko"
+
+#: base/forms.py:12 base/templates/base/auth/login.html:16
+#, fuzzy
+#| msgid "email"
+msgid "Email"
+msgstr "caemail"
+
+#: base/forms.py:13 base/templates/base/auth/login.html:20
+msgid "Senha"
+msgstr "Essapi"
+
+#: base/forms.py:14
+msgid "Confirmar senha"
+msgstr ""
+>>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
+
+#: base/models.py:6
+msgid "name"
+msgstr "Nduko"
+
+#: base/models.py:7
+#, fuzzy
+#| msgid "name"
+msgid "surname"
+msgstr "Nduko"
+
+#: base/models.py:9
+msgid "email"
+msgstr "caemail"
+
+#: base/models.py:10
 msgid "bio"
 msgstr "Ulandu"
 
-#: base/models.py:9
+#: base/models.py:11
 msgid "avatar"
 msgstr "Ofoto"
+
+#: base/models.py:56
+msgid "imagem"
+msgstr ""
+
+#: base/models.py:69
+msgid "logo"
+msgstr ""
 
 #: base/templates/base/activity.html:18 base/templates/base/home.html:29
 msgid "Actividades recentes"
 msgstr "Alinga vamue"
 
+<<<<<<< HEAD
 #: base/templates/base/activity.html:32
 #: base/templates/base/feed_component.html:14 base/templates/base/room.html:67
 #: base/templates/base/room.html:97
 msgid "atrás"
 msgstr "Konyima"
 
+=======
+>>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 #: base/templates/base/activity.html:40
 #: base/templates/base/activity_component.html:26
 msgid "Apagar"
@@ -71,16 +131,21 @@ msgstr "Wa tambulula etambululo"
 msgid "Atividades recentes"
 msgstr "Alinga vamue"
 
+#: base/templates/base/activity_component.html:54
+msgid "Usuarios activos"
+msgstr ""
+
 #: base/templates/base/auth/login.html:6
-#: base/templates/base/auth/register.html:46
+#: base/templates/base/auth/register.html:47
 msgid "Entrar"
 msgstr "Oku Iñila"
 
 #: base/templates/base/auth/login.html:10
-#: base/templates/base/auth/register.html:9
+#: base/templates/base/auth/register.html:10
 msgid "Encontre seu parceiro de estudo de linguas nacionais"
 msgstr "Vandja o munu ove u yongola okutanga"
 
+<<<<<<< HEAD
 #: base/templates/base/auth/login.html:16
 #| msgid "email"
 msgid "Email"
@@ -90,6 +155,8 @@ msgstr "Ukanda"
 msgid "Senha"
 msgstr "Elumbu"
 
+=======
+>>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 #: base/templates/base/auth/login.html:47
 msgid "Login"
 msgstr "Oku Iñila"
@@ -99,12 +166,12 @@ msgid "Ainda não se inscreveu? "
 msgstr "Andi cucuete a conta"
 
 #: base/templates/base/auth/login.html:54
-#: base/templates/base/auth/register.html:5
-#: base/templates/base/auth/register.html:40
+#: base/templates/base/auth/register.html:6
+#: base/templates/base/auth/register.html:41
 msgid "Criar conta"
 msgstr "Linga ove"
 
-#: base/templates/base/auth/register.html:45
+#: base/templates/base/auth/register.html:46
 msgid "Já tem uma conta?"
 msgstr "Andi cucuete a conta"
 
@@ -116,9 +183,9 @@ msgstr "Oku tiuka"
 msgid "Tem certeza que pretende eliminar esse registo"
 msgstr "Ove otchin mwele oyongola okulinga"
 
-#: base/templates/base/feed_component.html:38
-msgid "participantes"
-msgstr "o muno"
+#: base/templates/base/feed_component.html:41 base/templates/base/room.html:168
+msgid "Participantes"
+msgstr "Omunu"
 
 #: base/templates/base/home.html:19
 msgid "procurar"
@@ -136,22 +203,34 @@ msgstr "Evi tu kuete"
 msgid "Criar espaço"
 msgstr "Linga yove"
 
+<<<<<<< HEAD
 #: base/templates/base/pagination.html:5
 #: base/templates/base/pagination1.html:5
 msgid "Previous"
 msgstr ""
 
 #: base/templates/base/pagination.html:8
+=======
+#: base/templates/base/pagination.html:7 base/templates/base/pagination1.html:5
+msgid "Previous"
+msgstr ""
+
+#: base/templates/base/pagination.html:10
+>>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 #: base/templates/base/pagination1.html:8
 msgid "Page"
 msgstr ""
 
+<<<<<<< HEAD
 #: base/templates/base/pagination.html:8
+=======
+#: base/templates/base/pagination.html:10
+>>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 #: base/templates/base/pagination1.html:8
 msgid "of"
 msgstr ""
 
-#: base/templates/base/pagination.html:11
+#: base/templates/base/pagination.html:13
 #: base/templates/base/pagination1.html:11
 msgid "Next"
 msgstr "Ko vaso"
@@ -168,48 +247,44 @@ msgstr "Ame culo"
 msgid "Otchoto criado por"
 msgstr "Walinga la "
 
-#: base/templates/base/room.html:19
+#: base/templates/base/room.html:20
 msgid "Otchoto"
 msgstr ""
 
-#: base/templates/base/room.html:33
+#: base/templates/base/room.html:34
 msgid "edit"
 msgstr "Linga tchiwa"
 
-#: base/templates/base/room.html:70
+#: base/templates/base/room.html:74
 msgid "Criado por"
 msgstr "Walinga la "
 
-#: base/templates/base/room.html:104
+#: base/templates/base/room.html:108
 msgid "apagar"
 msgstr "Upamo"
-
-#: base/templates/base/room.html:138
-msgid "Participantes"
-msgstr "Omunu"
 
 #: base/templates/base/room_form.html:20
 msgid "Criar/Guardar Otchoto"
 msgstr "Soleca"
 
 #: base/templates/base/room_form.html:28
-msgid "Tema"
-msgstr "Tchipopia"
-
-#: base/templates/base/room_form.html:47
-msgid "Nome do otchoto"
-msgstr "Ondoco"
-
-#: base/templates/base/room_form.html:54
-msgid "Descrição do Otchoto"
+msgid "Lingua"
 msgstr ""
 
-#: base/templates/base/room_form.html:76
+#: base/templates/base/room_form.html:49
+msgid "Assunto"
+msgstr ""
+
+#: base/templates/base/room_form.html:56
+msgid "Descrição (Opcional)"
+msgstr ""
+
+#: base/templates/base/room_form.html:78
 #: base/templates/base/update-user.html:37
 msgid "Cancelar"
 msgstr "Ucalingue"
 
-#: base/templates/base/room_form.html:78
+#: base/templates/base/room_form.html:80
 msgid "Submemter"
 msgstr "Linga"
 
@@ -225,6 +300,13 @@ msgstr "Vanjilia"
 #: base/templates/base/topics.html:38
 msgid "All"
 msgstr "Vosi"
+
+#: base/templates/base/topics.html:42
+#: base/templates/base/topics_component.html:14
+#, fuzzy
+#| msgid "Entrar"
+msgid "filtrar"
+msgstr "Ingila"
 
 #: base/templates/base/topics_component.html:5
 msgid "Procurar tópicos "
@@ -289,3 +371,15 @@ msgstr ""
 #: base/urls.py:17
 msgid "activity/"
 msgstr ""
+
+#~ msgid "participantes"
+#~ msgstr "o muno"
+
+#~ msgid "Tema"
+#~ msgstr "Tchipopia"
+
+#~ msgid "Nome do otchoto"
+#~ msgstr "Ondoco"
+
+#~ msgid "atrás"
+#~ msgstr "henla"

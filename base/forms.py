@@ -5,15 +5,17 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.utils.translation import gettext_lazy as _
 class MyUserCreationForm(UserCreationForm):
-    name = forms.CharField(label=_('name'))
-    username = forms.CharField(label=_('username'))
-    email = forms.CharField(label=_('email'))
-    password1 = forms.CharField(label=_('password1'))
-    password2 = forms.CharField(label=_('password2'))
+    name = forms.CharField(label=_('Primeiro nome'))
+    surname = forms.CharField(label=_('Ultimo nome'))
 
+    username = forms.CharField(label=_('Username'))
+    email = forms.CharField(label=_('Email'))
+    password1 = forms.CharField(label=_('Senha'), widget=forms.PasswordInput)
+    password2 = forms.CharField(label=_('Confirmar senha'), widget=forms.PasswordInput)
+    #message = forms.Charfield(label='Mensagem/Dúvidas', widget=forms.Textarea)
     class Meta:
         model = User
-        fields = ['name', 'username', 'email', 'password1', 'password2',]
+        fields = ['name','surname', 'username', 'email', 'password1', 'password2',]
 
 class RoomForm(ModelForm):
     class Meta:
@@ -25,4 +27,4 @@ class RoomForm(ModelForm):
 class UserForm(ModelForm):
     class Meta:
         model = User
-        fields = ['avatar','name','username', 'email','bio',]
+        fields = ['avatar','name','surname','username', 'email','bio',]
