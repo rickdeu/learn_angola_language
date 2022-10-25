@@ -6,7 +6,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.contrib.auth import authenticate, login, logout
-from .models import Message, Room, Topic, User
+from .models import Message, Room, Suport, Topic, User
 from .forms import RoomForm, UserForm, MyUserCreationForm
 from django.core.paginator import Paginator, EmptyPage
 
@@ -84,6 +84,7 @@ def home(request):
     topics = Topic.objects.all()[0:20]
     room_message = Message.objects.filter(Q(room__topic__name__icontains=q))
     users = User.objects.all()
+    suports = Suport.objects.all()[0:4]
 
     room_list = Room.objects.filter(
         Q(topic__name__icontains=q) |
@@ -114,6 +115,7 @@ def home(request):
         'room_count':room_count,
         'room_messages':room_messages,
         'users':users,
+        'suports':suports
         }
     return render(
         request,
@@ -131,7 +133,8 @@ def room(request, pk):
         message = Message.objects.create(
             user = request.user,
             room = room,
-            body = request.POST.get('body')
+            body = request.POST.get('body'),
+            #img = request.FILES.get('file'),
         )
         room.participants.add(
             request.user

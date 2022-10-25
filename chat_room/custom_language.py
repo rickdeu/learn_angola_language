@@ -33,12 +33,19 @@ EXTRA_LANG_INFO = {
         'bidi': True, 
         'code': 'ngu',
         'name': 'Ngaguela',
-        'name_local': 'Ngaguela',
+        'name_local': 'Nganguela',
     },
+    
+       'ibm': {
+        'bidi': True, 
+        'code': 'ibm',
+        'name': 'Ibimbda',
+        'name_local': 'Ibimbda',
+    },
+    
     
 }
 
-#LANG_INFO = dict(django.conf.locale.LANG_INFO.items() + EXTRA_LANG_INFO.items())
 LANG_INFO = dict(django.conf.locale.LANG_INFO, **EXTRA_LANG_INFO)
 django.conf.locale.LANG_INFO = LANG_INFO
 
@@ -47,5 +54,10 @@ global_settings.LANGUAGES = global_settings.LANGUAGES + [("um",'Umbundu')]
 global_settings.LANGUAGES = global_settings.LANGUAGES + [("na",'Nhaneka')]
 global_settings.LANGUAGES = global_settings.LANGUAGES + [("kim",'Kimbundo')]
 global_settings.LANGUAGES = global_settings.LANGUAGES + [("kik",'Kikongo')]
-global_settings.LANGUAGES = global_settings.LANGUAGES + [("ngu",'Ngaguela')]
+global_settings.LANGUAGES = global_settings.LANGUAGES + [("ngu",'Nganguela')]
+global_settings.LANGUAGES = global_settings.LANGUAGES + [("ibm",'Ibimbda')]
 
+# Make and compile language
+# django-admin makemessages -l pt -um -l na -l kim -l kik -l ngu, -l ibm
+# django-admin makemessages --all
+# django-admin compilemessages

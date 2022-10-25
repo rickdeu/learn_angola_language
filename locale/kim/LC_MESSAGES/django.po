@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 14:30+0100\n"
+"POT-Creation-Date: 2022-10-25 14:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#: chat_room/settings.py:119
-msgid "Portuguese"
-msgstr ""
 
 #: chat_room/settings.py:121
 msgid "Umbundu"
@@ -42,8 +38,20 @@ msgstr ""
 msgid "Ngaguela"
 msgstr ""
 
+#: chat_room/settings.py:126
+msgid "Ibimbda"
+msgstr ""
+
 #: chat_room/urls.py:10
 msgid "api/"
+msgstr ""
+
+#: templates/footer.html:7
+msgid "Apoio"
+msgstr ""
+
+#: templates/footer.html:12 templates/navbar.html:25
+msgid "Idioma"
 msgstr ""
 
 #: templates/main.html:11
@@ -58,16 +66,12 @@ msgstr ""
 msgid "Procurar... "
 msgstr ""
 
-#: templates/navbar.html:25
-msgid "Idioma"
-msgstr ""
-
 #: templates/navbar.html:67
 msgid "Entrar"
 msgstr ""
 
 #: templates/navbar.html:81
-msgid "Perfil"
+msgid "Editar perfil"
 msgstr ""
 
 #: templates/navbar.html:94

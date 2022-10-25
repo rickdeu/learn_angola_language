@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 14:30+0100\n"
+"POT-Creation-Date: 2022-10-25 14:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,14 @@ msgstr ""
 msgid "avatar"
 msgstr ""
 
+#: base/models.py:56
+msgid "imagem"
+msgstr ""
+
+#: base/models.py:69
+msgid "logo"
+msgstr ""
+
 #: base/templates/base/activity.html:18 base/templates/base/home.html:29
 msgid "Actividades recentes"
 msgstr ""
@@ -77,6 +85,10 @@ msgstr ""
 
 #: base/templates/base/activity_component.html:5
 msgid "Atividades recentes"
+msgstr ""
+
+#: base/templates/base/activity_component.html:54
+msgid "Usuarios activos"
 msgstr ""
 
 #: base/templates/base/auth/login.html:6
@@ -115,8 +127,8 @@ msgstr ""
 msgid "Tem certeza que pretende eliminar esse registo"
 msgstr ""
 
-#: base/templates/base/feed_component.html:38
-msgid "participantes"
+#: base/templates/base/feed_component.html:41 base/templates/base/room.html:168
+msgid "Participantes"
 msgstr ""
 
 #: base/templates/base/home.html:19
@@ -166,24 +178,20 @@ msgstr ""
 msgid "Otchoto criado por"
 msgstr ""
 
-#: base/templates/base/room.html:19
+#: base/templates/base/room.html:20
 msgid "Otchoto"
 msgstr ""
 
-#: base/templates/base/room.html:33
+#: base/templates/base/room.html:34
 msgid "edit"
 msgstr ""
 
-#: base/templates/base/room.html:70
+#: base/templates/base/room.html:74
 msgid "Criado por"
 msgstr ""
 
-#: base/templates/base/room.html:104
+#: base/templates/base/room.html:108
 msgid "apagar"
-msgstr ""
-
-#: base/templates/base/room.html:150
-msgid "Participantes"
 msgstr ""
 
 #: base/templates/base/room_form.html:20
@@ -191,23 +199,23 @@ msgid "Criar/Guardar Otchoto"
 msgstr ""
 
 #: base/templates/base/room_form.html:28
-msgid "Tema"
+msgid "Lingua"
 msgstr ""
 
-#: base/templates/base/room_form.html:47
-msgid "Nome do otchoto"
+#: base/templates/base/room_form.html:49
+msgid "Assunto"
 msgstr ""
 
-#: base/templates/base/room_form.html:54
-msgid "Descrição do Otchoto"
+#: base/templates/base/room_form.html:56
+msgid "Descrição (Opcional)"
 msgstr ""
 
-#: base/templates/base/room_form.html:76
+#: base/templates/base/room_form.html:78
 #: base/templates/base/update-user.html:37
 msgid "Cancelar"
 msgstr ""
 
-#: base/templates/base/room_form.html:78
+#: base/templates/base/room_form.html:80
 msgid "Submemter"
 msgstr ""
 
@@ -221,6 +229,11 @@ msgstr ""
 
 #: base/templates/base/topics.html:38
 msgid "All"
+msgstr ""
+
+#: base/templates/base/topics.html:42
+#: base/templates/base/topics_component.html:14
+msgid "filtrar"
 msgstr ""
 
 #: base/templates/base/topics_component.html:5

@@ -34,42 +34,9 @@
 
     {% endblock %}
 
-    <footer class="header header--loggedIn">
-        <div class="container">
-          <a href="{% url 'home' %}" class="header__logo">
-           <!-- <img src="{% static 'images/logo.svg'%}" />-->
-            <h1>  {% trans "Apoio" %} </h1>
-          </a>
- 
-    
-    <div class="languages">
-    <!--<p>{% trans "Idioma" %}:</p>-->
-    <ul class="suport" style="font-size: 8px; ">
-      <li> <a href="">Fenix Innovation</a>  </li>
 
-    <li> <a href=""> Cuyuyu Entregas</a>  </li>
-    <li> <a href=""> Academia +Valor</a>  </li>
 
-    </ul>
-    </div>
-          <nav class="header__menu">
-            <!-- Not Logged In -->
-            <a href="{% url 'home' %}">
-              <img src="{% static 'images/logo.svg'%}" />
-              <p>Otchoto</p>
-            </a> 
-    
-            <!-- Logged In -->
-    
-       
-       
-          </nav>
-      
-      
-        </div>
-    
-    
-    </footer>
+
      <script src="{% static 'js/script.js' %}"></script>
   </body>
 </html>

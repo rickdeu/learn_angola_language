@@ -1,5 +1,6 @@
 {% extends 'main.html' %}
 {% load i18n %}
+{% load static %}
 
    {% block content %}
     <main class="profile-page layout layout--2">
@@ -67,6 +68,9 @@
                 <span> {{room.created|timesince}} </span>
               </div>
               <div class="room__hosted">
+                <p style="font-size: 10px; text-align: justify;">
+                  {{room.description}}
+                </p>                <hr>
                 <p> {% trans "Criado por" %}</p>
                 <a href="{% url 'user-profile' room.host.id %}" class="room__author">
                   <div class="avatar avatar--small">
@@ -114,7 +118,20 @@
 
                   </div>
                   <div class="thread__details">
-                    {{message.body}}
+                   
+                   {% if message.img %}
+                
+                    <a href="{{message.img.url}}" >
+                       <img width="100px" height="40px" src="{{message.img.url}}" />
+                     </a>
+                     <br>
+                     {{message.body}}
+                     {% else %}
+                     {{message.body}}
+                     {% endif %}
+
+
+
                   </div>
                 </div>
             
@@ -129,13 +146,14 @@
           <div class="room__message">
             <form action="" method="POST">
               {% csrf_token %}
-              <input name="body" placeholder="Escreva a sua mensagem aqui..." />
+              <input name="body" required placeholder="Escreva a sua mensagem aqui..." />
+              <input type="file" name="file" placeholder="carregar ficheiro"/>
             </form>
           </div>
 
           {% else %}
           <div class="room__message">
-            <form action="" method="POST">
+            <form action="" method="POST" enctype="multipart/form-data">
               {% csrf_token %}
               <input name="body" disabled placeholder="Inicia sessão primeiro..." />
             </form>

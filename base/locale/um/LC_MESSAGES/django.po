@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 14:27+0100\n"
+"POT-Creation-Date: 2022-10-25 14:41+0100\n"
 "PO-Revision-Date: 2022-10-14 23:25+0000\n"
 "Last-Translator:   <hangaloandre@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,6 +68,14 @@ msgstr "bio"
 msgid "avatar"
 msgstr "foto"
 
+#: base/models.py:56
+msgid "imagem"
+msgstr ""
+
+#: base/models.py:69
+msgid "logo"
+msgstr ""
+
 #: base/templates/base/activity.html:18 base/templates/base/home.html:29
 msgid "Actividades recentes"
 msgstr "Tchapita etali"
@@ -85,6 +93,10 @@ msgstr "watava cuti"
 #: base/templates/base/activity_component.html:5
 msgid "Atividades recentes"
 msgstr "Walinga etali"
+
+#: base/templates/base/activity_component.html:54
+msgid "Usuarios activos"
+msgstr ""
 
 #: base/templates/base/auth/login.html:6
 #: base/templates/base/auth/register.html:47
@@ -122,9 +134,9 @@ msgstr "Tchuca"
 msgid "Tem certeza que pretende eliminar esse registo"
 msgstr "Ove otchin mwele oyongola okulinga"
 
-#: base/templates/base/feed_component.html:38
-msgid "participantes"
-msgstr "o muno"
+#: base/templates/base/feed_component.html:41 base/templates/base/room.html:168
+msgid "Participantes"
+msgstr "Omunu"
 
 #: base/templates/base/home.html:19
 msgid "procurar"
@@ -173,48 +185,44 @@ msgstr "Ame culo"
 msgid "Otchoto criado por"
 msgstr "Walinga la "
 
-#: base/templates/base/room.html:19
+#: base/templates/base/room.html:20
 msgid "Otchoto"
 msgstr ""
 
-#: base/templates/base/room.html:33
+#: base/templates/base/room.html:34
 msgid "edit"
 msgstr "Linga tchiwa"
 
-#: base/templates/base/room.html:70
+#: base/templates/base/room.html:74
 msgid "Criado por"
 msgstr "Walinga la "
 
-#: base/templates/base/room.html:104
+#: base/templates/base/room.html:108
 msgid "apagar"
 msgstr "Upamo"
-
-#: base/templates/base/room.html:150
-msgid "Participantes"
-msgstr "Omunu"
 
 #: base/templates/base/room_form.html:20
 msgid "Criar/Guardar Otchoto"
 msgstr "Soleca"
 
 #: base/templates/base/room_form.html:28
-msgid "Tema"
-msgstr "Tchipopia"
-
-#: base/templates/base/room_form.html:47
-msgid "Nome do otchoto"
-msgstr "Ondoco"
-
-#: base/templates/base/room_form.html:54
-msgid "Descrição do Otchoto"
+msgid "Lingua"
 msgstr ""
 
-#: base/templates/base/room_form.html:76
+#: base/templates/base/room_form.html:49
+msgid "Assunto"
+msgstr ""
+
+#: base/templates/base/room_form.html:56
+msgid "Descrição (Opcional)"
+msgstr ""
+
+#: base/templates/base/room_form.html:78
 #: base/templates/base/update-user.html:37
 msgid "Cancelar"
 msgstr "Ucalingue"
 
-#: base/templates/base/room_form.html:78
+#: base/templates/base/room_form.html:80
 msgid "Submemter"
 msgstr "Linga"
 
@@ -231,6 +239,13 @@ msgstr "Vandjilia"
 #: base/templates/base/topics.html:38
 msgid "All"
 msgstr "Vossi"
+
+#: base/templates/base/topics.html:42
+#: base/templates/base/topics_component.html:14
+#, fuzzy
+#| msgid "Entrar"
+msgid "filtrar"
+msgstr "Ingila"
 
 #: base/templates/base/topics_component.html:5
 msgid "Procurar tópicos "
@@ -295,6 +310,15 @@ msgstr ""
 #: base/urls.py:17
 msgid "activity/"
 msgstr ""
+
+#~ msgid "participantes"
+#~ msgstr "o muno"
+
+#~ msgid "Tema"
+#~ msgstr "Tchipopia"
+
+#~ msgid "Nome do otchoto"
+#~ msgstr "Ondoco"
 
 #~ msgid "atrás"
 #~ msgstr "henla"

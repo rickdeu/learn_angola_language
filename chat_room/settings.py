@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-o3a!4h3!1&om4c(yb(hb1828b#g6#k9p^ofkkne6w#kyschm@%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -122,7 +122,8 @@ LANGUAGES = [
     ('na', _('Nhaneka')),    
     ('kim', _('Kimbundo')),    
     ('kik', _('Kikongo')),    
-    ('ngu', _('Ngaguela')),    
+    ('ngu', _('Ngaguela')),   
+    ("ibm",_('Ibimbda'))
     ]
 
 LOCALE_PATHS = [
