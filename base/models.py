@@ -15,7 +15,7 @@ class User(AbstractUser):
 
 class Topic(models.Model):
     name = models.CharField(max_length=200)
-    
+
     def __str__(self):
         return self.name
 
@@ -25,16 +25,16 @@ class Room(models.Model):
         User,
         on_delete=models.SET_NULL,
         null=True
-    ) 
+    )
     topic = models.ForeignKey(
         Topic,
         on_delete=models.SET_NULL,
         null=True
-    ) 
+    )
     name = models.CharField(max_length=200)
     description = models.TextField(null=True, blank=True)
     participants =  models.ManyToManyField(
-        User, 
+        User,
         related_name='participants',
         blank=True
         )
@@ -49,7 +49,7 @@ class Room(models.Model):
 
 class Message(models.Model):
     user = models.ForeignKey(
-        User, 
+        User,
         on_delete = models.CASCADE
     )
     room = models.ForeignKey(

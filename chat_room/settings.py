@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-o3a!4h3!1&om4c(yb(hb1828b#g6#k9p^ofkkne6w#kyschm@%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['otchoto.pythonanywhere.com',]
 
 
 # Application definition
@@ -117,24 +117,24 @@ gettext_noop = lambda s: s
 
 EXTRA_LANG_INFO = {
     'um': {
-        'bidi': True, 
+        'bidi': True,
         'code': 'um',
         'name': 'Umbundu',
         'name_local': 'Umbundu',
     },
         'na': {
-        'bidi': True, 
+        'bidi': True,
         'code': 'na',
         'name': 'Nhaneka',
         'name_local': 'Nhaneka',
     },
             'qui': {
-        'bidi': True, 
+        'bidi': True,
         'code': 'qui',
         'name': 'Quimbundo',
         'name_local': 'Quimbundo',
     },
-    
+
 }
 import django.conf.locale
 from django.conf import global_settings
@@ -149,10 +149,10 @@ global_settings.LANGUAGES = global_settings.LANGUAGES + [("qui",'Quimbundo')]
 LANGUAGE_CODE = 'pt-PT'
 LANGUAGES = [
     ('pt', _('Portuguese')),
-    #('en', _('English')), 
-    ('um', _('Umbundu')),  
-    ('na', _('Nhaneka')),    
-    ('qui', _('Quimbundo')),    
+    #('en', _('English')),
+    ('um', _('Umbundu')),
+    ('na', _('Nhaneka')),
+    ('qui', _('Quimbundo')),
     ]
 
 LOCALE_PATHS = [
@@ -169,14 +169,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 MEDIA_URL = '/images/profile/'
 STATICFILES_DIRS=[
     BASE_DIR / 'static'
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static/images/profile'
-
+STATIC_ROOT = Path(BASE_DIR, 'staticfiles')
 # STATIC_ROOT =
 
 # Default primary key field type
