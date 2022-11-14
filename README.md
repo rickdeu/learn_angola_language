@@ -30,7 +30,7 @@
     <img src="screen/profile.png" width="70%" </img> 
 </div>
 
-# 3. Mobile Version 
+# 3. Mobile (Responsive) Version 
 <div align="center">
     <img src="screen/mobile.png" width="70%" </img> 
 </div>
