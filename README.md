@@ -17,24 +17,24 @@
   
 # 1. HOME PAGE 
 <div align="center">
-    <img src="screen/home.png" width="100%" height="200px"</img> 
+    <img src="screen/home.png" width="70%" height="500px"</img> 
 </div>
 
 # 2. Chat Room
 <div align="center">
-    <img src="screen/room.png" width="100%" height="200px"</img> 
+    <img src="screen/room.png" width="70%" height="500px"</img> 
 </div>
   
 # 3. Profile 
 <div align="center">
-    <img src="screen/profile.png" width="100%" height="200px"</img> 
+    <img src="screen/profile.png" width="70%" height="500px"</img> 
 </div>
 
 # 3. Mobile Version 
 <div align="center">
-    <img src="screen/mobile.png" width="100%" height="200px"</img> 
+    <img src="screen/mobile.png" width="70%" height="500px"</img> 
 </div>
 
 <div align="center">
-    <img src="screen/mobile1.png" width="100%" height="200px"</img> 
+    <img src="screen/mobile1.png" width="70%" height="500px"</img> 
 </div>
