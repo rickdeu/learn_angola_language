@@ -40,7 +40,7 @@ EXTRA_LANG_INFO = {
         'bidi': True, 
         'code': 'ibm',
         'name': 'Ibimbda',
-        'name_local': 'Ibimbda',
+        'name_local': 'Ibinda',
     },
     
     
@@ -55,7 +55,7 @@ global_settings.LANGUAGES = global_settings.LANGUAGES + [("na",'Nhaneka')]
 global_settings.LANGUAGES = global_settings.LANGUAGES + [("kim",'Kimbundo')]
 global_settings.LANGUAGES = global_settings.LANGUAGES + [("kik",'Kikongo')]
 global_settings.LANGUAGES = global_settings.LANGUAGES + [("ngu",'Nganguela')]
-global_settings.LANGUAGES = global_settings.LANGUAGES + [("ibm",'Ibimbda')]
+global_settings.LANGUAGES = global_settings.LANGUAGES + [("ibm",'Ibinda')]
 
 # Make and compile language
 # django-admin makemessages -l um -l na -l kim -l kik -l ngu -l ibm

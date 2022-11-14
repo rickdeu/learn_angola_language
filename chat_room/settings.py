@@ -123,7 +123,7 @@ LANGUAGES = [
     ('kim', _('Kimbundo')),    
     ('kik', _('Kikongo')),    
     ('ngu', _('Ngaguela')),   
-    ("ibm",_('Ibimbda'))
+    ("ibm",_('Ibinda'))
     ]
 
 LOCALE_PATHS = [
