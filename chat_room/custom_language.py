@@ -58,6 +58,6 @@ global_settings.LANGUAGES = global_settings.LANGUAGES + [("ngu",'Nganguela')]
 global_settings.LANGUAGES = global_settings.LANGUAGES + [("ibm",'Ibimbda')]
 
 # Make and compile language
-# django-admin makemessages -l pt -um -l na -l kim -l kik -l ngu, -l ibm
+# django-admin makemessages -l um -l na -l kim -l kik -l ngu -l ibm
 # django-admin makemessages --all
 # django-admin compilemessages

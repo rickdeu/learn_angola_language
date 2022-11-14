@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-25 14:41+0100\n"
+"POT-Creation-Date: 2022-11-14 13:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,16 +26,12 @@ msgid "Ultimo nome"
 msgstr ""
 
 #: base/forms.py:11
-#, fuzzy
-#| msgid "name"
 msgid "Username"
-msgstr "Enhina"
+msgstr ""
 
 #: base/forms.py:12 base/templates/base/auth/login.html:16
-#, fuzzy
-#| msgid "email"
 msgid "Email"
-msgstr "email"
+msgstr ""
 
 #: base/forms.py:13 base/templates/base/auth/login.html:20
 msgid "Senha"
@@ -47,25 +43,23 @@ msgstr ""
 
 #: base/models.py:6
 msgid "name"
-msgstr "Enhina"
+msgstr ""
 
 #: base/models.py:7
-#, fuzzy
-#| msgid "name"
 msgid "surname"
-msgstr "Enhina"
+msgstr ""
 
 #: base/models.py:9
 msgid "email"
-msgstr "email"
+msgstr ""
 
 #: base/models.py:10
 msgid "bio"
-msgstr "Ove"
+msgstr ""
 
 #: base/models.py:11
 msgid "avatar"
-msgstr "Cafoto"
+msgstr ""
 
 #: base/models.py:56
 msgid "imagem"
@@ -98,12 +92,12 @@ msgid "Usuarios activos"
 msgstr ""
 
 #: base/templates/base/auth/login.html:6
-#: base/templates/base/auth/register.html:47
+#: base/templates/base/auth/register.html:46
 msgid "Entrar"
 msgstr ""
 
 #: base/templates/base/auth/login.html:10
-#: base/templates/base/auth/register.html:10
+#: base/templates/base/auth/register.html:9
 msgid "Encontre seu parceiro de estudo de linguas nacionais"
 msgstr ""
 
@@ -116,12 +110,12 @@ msgid "Ainda não se inscreveu? "
 msgstr ""
 
 #: base/templates/base/auth/login.html:54
-#: base/templates/base/auth/register.html:6
-#: base/templates/base/auth/register.html:41
+#: base/templates/base/auth/register.html:5
+#: base/templates/base/auth/register.html:40
 msgid "Criar conta"
 msgstr ""
 
-#: base/templates/base/auth/register.html:46
+#: base/templates/base/auth/register.html:45
 msgid "Já tem uma conta?"
 msgstr ""
 
