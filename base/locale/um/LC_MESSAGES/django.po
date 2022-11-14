@@ -10,11 +10,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 <<<<<<< HEAD
 "POT-Creation-Date: 2022-10-15 13:23+0100\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2022-10-15 16:20+0000\n"
 =======
 "POT-Creation-Date: 2022-10-25 14:41+0100\n"
 "PO-Revision-Date: 2022-10-14 23:25+0000\n"
 >>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
+=======
+"PO-Revision-Date: 2022-10-14 23:25+0000\n"
+>>>>>>> parent of f3fd2b6... last updates
 "Last-Translator:   <hangaloandre@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -26,23 +30,25 @@ msgstr ""
 <<<<<<< HEAD
 #: base/forms.py:8 base/models.py:6
 msgid "name"
-msgstr "Onduko"
+msgstr "Nduko"
 
 #: base/forms.py:9
+#, fuzzy
 #| msgid "name"
 msgid "username"
-msgstr "Onduko"
+msgstr "Nduko"
 
 #: base/forms.py:10 base/models.py:7
 msgid "email"
-msgstr "Ukanda"
+msgstr "caemail"
 
 #: base/forms.py:11
 msgid "password1"
-msgstr "Elumbu"
+msgstr ""
 
 #: base/forms.py:12
 msgid "password2"
+<<<<<<< HEAD
 msgstr "Elumbu"
 =======
 #: base/forms.py:8
@@ -73,6 +79,9 @@ msgstr "Essapi"
 msgid "Confirmar senha"
 msgstr ""
 >>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
+=======
+msgstr ""
+>>>>>>> parent of f3fd2b6... last updates
 
 #: base/models.py:6
 msgid "name"
@@ -90,11 +99,11 @@ msgstr "caemail"
 
 #: base/models.py:10
 msgid "bio"
-msgstr "Ulandu"
+msgstr "bio"
 
 #: base/models.py:11
 msgid "avatar"
-msgstr "Ofoto"
+msgstr "foto"
 
 #: base/models.py:56
 msgid "imagem"
@@ -106,30 +115,30 @@ msgstr ""
 
 #: base/templates/base/activity.html:18 base/templates/base/home.html:29
 msgid "Actividades recentes"
-msgstr "Alinga vamue"
+msgstr "Tchapita etali"
 
 <<<<<<< HEAD
 #: base/templates/base/activity.html:32
 #: base/templates/base/feed_component.html:14 base/templates/base/room.html:67
 #: base/templates/base/room.html:97
 msgid "atrás"
-msgstr "Konyima"
+msgstr "henla"
 
 =======
 >>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 #: base/templates/base/activity.html:40
 #: base/templates/base/activity_component.html:26
 msgid "Apagar"
-msgstr "Oku imapo"
+msgstr "Yupamo"
 
 #: base/templates/base/activity.html:52
 #: base/templates/base/activity_component.html:38
 msgid "respondeu a publicação"
-msgstr "Wa tambulula etambululo"
+msgstr "watava cuti"
 
 #: base/templates/base/activity_component.html:5
 msgid "Atividades recentes"
-msgstr "Alinga vamue"
+msgstr "Walinga etali"
 
 #: base/templates/base/activity_component.html:54
 msgid "Usuarios activos"
@@ -138,7 +147,7 @@ msgstr ""
 #: base/templates/base/auth/login.html:6
 #: base/templates/base/auth/register.html:47
 msgid "Entrar"
-msgstr "Oku Iñila"
+msgstr "Ingila"
 
 #: base/templates/base/auth/login.html:10
 #: base/templates/base/auth/register.html:10
@@ -147,19 +156,20 @@ msgstr "Vandja o munu ove u yongola okutanga"
 
 <<<<<<< HEAD
 #: base/templates/base/auth/login.html:16
+#, fuzzy
 #| msgid "email"
 msgid "Email"
-msgstr "Ukanda"
+msgstr "caemail"
 
 #: base/templates/base/auth/login.html:20
 msgid "Senha"
-msgstr "Elumbu"
+msgstr "Essapi"
 
 =======
 >>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 #: base/templates/base/auth/login.html:47
 msgid "Login"
-msgstr "Oku Iñila"
+msgstr "Inhila"
 
 #: base/templates/base/auth/login.html:52
 msgid "Ainda não se inscreveu? "
@@ -177,7 +187,7 @@ msgstr "Andi cucuete a conta"
 
 #: base/templates/base/delete.html:19
 msgid "Voltar"
-msgstr "Oku tiuka"
+msgstr "Tchuca"
 
 #: base/templates/base/delete.html:27
 msgid "Tem certeza que pretende eliminar esse registo"
@@ -204,6 +214,7 @@ msgid "Criar espaço"
 msgstr "Linga yove"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: base/templates/base/pagination.html:5
 #: base/templates/base/pagination1.html:5
 msgid "Previous"
@@ -227,13 +238,24 @@ msgstr ""
 #: base/templates/base/pagination.html:10
 >>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
 #: base/templates/base/pagination1.html:8
+=======
+#: base/templates/base/pagination.html:5 base/templates/base/pagination1.html:5
+msgid "Previous"
+msgstr ""
+
+#: base/templates/base/pagination.html:8 base/templates/base/pagination1.html:8
+msgid "Page"
+msgstr ""
+
+#: base/templates/base/pagination.html:8 base/templates/base/pagination1.html:8
+>>>>>>> parent of f3fd2b6... last updates
 msgid "of"
 msgstr ""
 
 #: base/templates/base/pagination.html:13
 #: base/templates/base/pagination1.html:11
 msgid "Next"
-msgstr "Ko vaso"
+msgstr ""
 
 #: base/templates/base/profile.html:25
 msgid "Editar Conta"
@@ -293,13 +315,14 @@ msgid "Procurar tópicos"
 msgstr "Vandjilia etchi u yongola"
 
 #: base/templates/base/topics.html:31
+#, fuzzy
 #| msgid "procurar"
 msgid "Procurar... "
-msgstr "Vanjilia"
+msgstr "Vandjilia"
 
 #: base/templates/base/topics.html:38
 msgid "All"
-msgstr "Vosi"
+msgstr "Vossi"
 
 #: base/templates/base/topics.html:42
 #: base/templates/base/topics_component.html:14
@@ -314,7 +337,7 @@ msgstr "Vandjilia etchi u yongola"
 
 #: base/templates/base/topics_component.html:9
 msgid "Todos"
-msgstr "Vosi"
+msgstr "Vossi"
 
 #: base/templates/base/update-user.html:19
 msgid "Editar perfil"

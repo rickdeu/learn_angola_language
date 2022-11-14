@@ -10,6 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 <<<<<<< HEAD
 "POT-Creation-Date: 2022-10-15 13:23+0100\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2022-10-18 22:26+0000\n"
 "Last-Translator:   <joajoshang@gmail.com>\n"
 =======
@@ -17,6 +18,10 @@ msgstr ""
 "PO-Revision-Date: 2022-10-15 12:23+0000\n"
 "Last-Translator:   <hangaloandre@gmail.com>\n"
 >>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
+=======
+"PO-Revision-Date: 2022-10-15 12:23+0000\n"
+"Last-Translator:   <hangaloandre@gmail.com>\n"
+>>>>>>> parent of f3fd2b6... last updates
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -28,12 +33,16 @@ msgstr ""
 <<<<<<< HEAD
 #: base/forms.py:8 base/models.py:6
 msgid "name"
+<<<<<<< HEAD
 msgstr "Nome e Sobrenome"
 =======
 #: base/forms.py:8
 msgid "Primeiro nome"
 msgstr ""
 >>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
+=======
+msgstr "nome"
+>>>>>>> parent of f3fd2b6... last updates
 
 #: base/forms.py:9
 msgid "Ultimo nome"

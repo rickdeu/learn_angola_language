@@ -28,10 +28,14 @@ SECRET_KEY = 'django-insecure-o3a!4h3!1&om4c(yb(hb1828b#g6#k9p^ofkkne6w#kyschm@%
 DEBUG = True
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['otchoto.pythonanywhere.com',]
 =======
 ALLOWED_HOSTS = ['*']
 >>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
+=======
+ALLOWED_HOSTS = []
+>>>>>>> parent of f3fd2b6... last updates
 
 
 # Application definition
@@ -123,24 +127,24 @@ gettext_noop = lambda s: s
 
 EXTRA_LANG_INFO = {
     'um': {
-        'bidi': True,
+        'bidi': True, 
         'code': 'um',
         'name': 'Umbundu',
         'name_local': 'Umbundu',
     },
         'na': {
-        'bidi': True,
+        'bidi': True, 
         'code': 'na',
         'name': 'Nhaneka',
         'name_local': 'Nhaneka',
     },
             'qui': {
-        'bidi': True,
+        'bidi': True, 
         'code': 'qui',
         'name': 'Quimbundo',
         'name_local': 'Quimbundo',
     },
-
+    
 }
 import django.conf.locale
 from django.conf import global_settings
@@ -155,6 +159,7 @@ global_settings.LANGUAGES = global_settings.LANGUAGES + [("qui",'Quimbundo')]
 LANGUAGE_CODE = 'pt-PT'
 LANGUAGES = [
     ('pt', _('Portuguese')),
+<<<<<<< HEAD
     #('en', _('English')),
     ('um', _('Umbundu')),
     ('na', _('Nhaneka')),
@@ -171,6 +176,12 @@ LANGUAGES = [
     ('ngu', _('Ngaguela')),   
     ("ibm",_('Ibimbda'))
 >>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
+=======
+    #('en', _('English')), 
+    ('um', _('Umbundu')),  
+    ('na', _('Nhaneka')),    
+    ('qui', _('Quimbundo')),    
+>>>>>>> parent of f3fd2b6... last updates
     ]
 
 LOCALE_PATHS = [
@@ -187,18 +198,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = '/staticfiles/'
+STATIC_URL = '/static/'
 MEDIA_URL = '/images/profile/'
 STATICFILES_DIRS=[
     BASE_DIR / 'static'
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static/images/profile'
+<<<<<<< HEAD
 STATIC_ROOT = Path(BASE_DIR, 'staticfiles')
 <<<<<<< HEAD
 =======
 
 >>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
+=======
+
+>>>>>>> parent of f3fd2b6... last updates
 # STATIC_ROOT =
 
 # Default primary key field type
