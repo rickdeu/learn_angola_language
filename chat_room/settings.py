@@ -27,15 +27,7 @@ SECRET_KEY = 'django-insecure-o3a!4h3!1&om4c(yb(hb1828b#g6#k9p^ofkkne6w#kyschm@%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['otchoto.pythonanywhere.com',]
-=======
 ALLOWED_HOSTS = ['*']
->>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
-=======
-ALLOWED_HOSTS = []
->>>>>>> parent of f3fd2b6... last updates
 
 
 # Application definition
@@ -122,49 +114,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
-<<<<<<< HEAD
-gettext_noop = lambda s: s
-
-EXTRA_LANG_INFO = {
-    'um': {
-        'bidi': True, 
-        'code': 'um',
-        'name': 'Umbundu',
-        'name_local': 'Umbundu',
-    },
-        'na': {
-        'bidi': True, 
-        'code': 'na',
-        'name': 'Nhaneka',
-        'name_local': 'Nhaneka',
-    },
-            'qui': {
-        'bidi': True, 
-        'code': 'qui',
-        'name': 'Quimbundo',
-        'name_local': 'Quimbundo',
-    },
-    
-}
-import django.conf.locale
-from django.conf import global_settings
-#LANG_INFO = dict(django.conf.locale.LANG_INFO.items() + EXTRA_LANG_INFO.items())
-LANG_INFO = dict(django.conf.locale.LANG_INFO, **EXTRA_LANG_INFO)
-django.conf.locale.LANG_INFO = LANG_INFO
-
-global_settings.LANGUAGES = global_settings.LANGUAGES + [("um",'Umbundu')]
-global_settings.LANGUAGES = global_settings.LANGUAGES + [("na",'Nhaneka')]
-global_settings.LANGUAGES = global_settings.LANGUAGES + [("qui",'Quimbundo')]
-
-LANGUAGE_CODE = 'pt-PT'
-LANGUAGES = [
-    ('pt', _('Portuguese')),
-<<<<<<< HEAD
-    #('en', _('English')),
-    ('um', _('Umbundu')),
-    ('na', _('Nhaneka')),
-    ('qui', _('Quimbundo')),
-=======
 LANGUAGE_CODE = 'um'
 LANGUAGES = [
     #('pt', _('Portuguese')),
@@ -175,13 +124,6 @@ LANGUAGES = [
     ('kik', _('Kikongo')),    
     ('ngu', _('Ngaguela')),   
     ("ibm",_('Ibimbda'))
->>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
-=======
-    #('en', _('English')), 
-    ('um', _('Umbundu')),  
-    ('na', _('Nhaneka')),    
-    ('qui', _('Quimbundo')),    
->>>>>>> parent of f3fd2b6... last updates
     ]
 
 LOCALE_PATHS = [
@@ -198,22 +140,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 MEDIA_URL = '/images/profile/'
 STATICFILES_DIRS=[
     BASE_DIR / 'static'
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static/images/profile'
-<<<<<<< HEAD
 STATIC_ROOT = Path(BASE_DIR, 'staticfiles')
-<<<<<<< HEAD
-=======
-
->>>>>>> 29aec4e3d2cb40430c0802761e92400d45db6d2f
-=======
-
->>>>>>> parent of f3fd2b6... last updates
 # STATIC_ROOT =
 
 # Default primary key field type
